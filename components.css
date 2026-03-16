@@ -16,17 +16,35 @@ color:#F54927;
 
 .btn{
 display:inline-block;
-padding:18px 40px;
-font-size:20px;
+padding:22px 60px;          /* Bigger size */
+font-size:22px;             /* Bigger text */
 background-color:#F54927;
 color:#000;
 font-weight:700;
 border:none;
-border-radius:12px;
+border-radius:14px;
 text-decoration:none;
 transition:.3s;
+animation:blink 1.2s infinite;
 }
 
+/* Hover effect */
 .btn:hover{
-background-color:#ff6b4d;
+transform:scale(1.08);
+}
+
+/* Blinking / glow animation */
+@keyframes blink{
+0%{
+box-shadow:0 0 5px #F54927;
+opacity:1;
+}
+50%{
+box-shadow:0 0 25px #F54927;
+opacity:0.85;
+}
+100%{
+box-shadow:0 0 5px #F54927;
+opacity:1;
+}
 }
